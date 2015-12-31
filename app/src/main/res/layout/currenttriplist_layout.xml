@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/currenttriplayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+      <LinearLayout 
+        android:id="@+id/headerlayou"
+        android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+      android:background="@drawable/tab_bar_bg_top">
+   <include
+          android:id="@+id/header"
+          layout="@layout/header_layout"/>   
+          
+       </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/currenttriplist_view"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/headerlayou"
+        android:background="@color/darkblue"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/triplistsize_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            style="@style/avaliablelistfont">
+        </TextView>
+    </LinearLayout>
+    <View
+        android:id="@+id/separator_view"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/currenttriplist_view"
+        android:background="@drawable/separator"/>
+<ListView
+    android:id="@+id/listview"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:divider="@drawable/separator"
+    android:dividerHeight="10dp"
+    android:layout_below="@id/separator_view"
+    android:layout_marginBottom="50dp"/>
+    <View
+        android:id="@+id/separator_view1"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="50dp"
+        android:layout_above="@+id/footerlayout"
+        android:background="@drawable/separator"/>
+<LinearLayout
+    android:id="@+id/footerlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:background="@drawable/tab_bar_bg"
+    >
+
+    <include
+        android:id="@+id/footer"
+        layout="@layout/footer_layout"
+        />
+
+       </LinearLayout>
+    <ProgressBar
+        android:id="@+id/listprogresbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="bottom" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tab_bar_bg"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:background="@color/darkskyblue"
+            android:weightSum="4" >
+
+            <LinearLayout
+                android:id="@+id/addtrip_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:paddingLeft="0dp"
+                android:onClick="addtripclick"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/twenty_pt"
+                >
+                <ImageView
+                    android:id="@+id/plusfooterlogo"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingTop="0dp"
+                    android:src="@drawable/plusfooter"
+                    />
+
+                <TextView
+                    android:id="@+id/addtrip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:onClick="addtripclick"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/addtrip_footer"
+
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    />
+                <ImageView
+                    android:id="@+id/navbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    android:src="@drawable/navbarline"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/adphone_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:paddingLeft="0dp"
+
+                android:paddingRight="0dp"
+              
+                android:onClick="addphoneclick"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/twenty_pt"
+                >
+                <ImageView
+                    android:id="@+id/phonefooter"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:contentDescription="@string/todo"
+                    android:paddingTop="0dp"
+                    android:src="@drawable/mobilephonefooter"
+                    />
+                <TextView
+                    android:id="@+id/phonecll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:onClick="addphoneclick"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="3dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/addphone_footer"
+
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    />
+                <ImageView
+                    android:id="@+id/navbar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    android:src="@drawable/navbarline"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/addinvite_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.00"
+                android:onClick="addinviteclick"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/twenty_pt"
+
+                android:weightSum="2" >
+
+                <ImageView
+                    android:id="@+id/inviteimage"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:contentDescription="@string/todo"
+                    android:paddingTop="0dp"
+                    android:src="@drawable/sharethisfooter"/>
+
+                <TextView
+                    android:id="@+id/Invite_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="@dimen/twenty_pt"
+                    android:clickable="true"
+                    android:onClick="addinviteclick"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="3dp"
+
+                    android:text="@string/invite_footer"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
