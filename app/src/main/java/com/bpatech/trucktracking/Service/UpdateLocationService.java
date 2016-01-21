@@ -1,6 +1,5 @@
 package com.bpatech.trucktracking.Service;
 
-
 import android.app.AlertDialog;
 import android.app.Service;
 import android.content.Context;
